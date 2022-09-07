@@ -1,0 +1,21 @@
+function sum(arr, n) {
+  // Only change code below this line
+  if (n==0){
+      console.log(`Call number ${n}, sum=0`);
+      return 0; 
+  }
+  else {
+      console.log(`Call number ${n}, added ${arr[n-1]}`);
+      return sum(arr,n-1)+arr[n-1];
+  }
+  // Only change code above this line
+}
+
+
+sum([1,2,3,4,5],4);
+VM817:8 Call number 4, added 4
+VM817:8 Call number 3, added 3
+VM817:8 Call number 2, added 2
+VM817:8 Call number 1, added 1
+VM817:4 Call number 0, sum=0
+10
