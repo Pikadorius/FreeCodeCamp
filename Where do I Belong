@@ -1,0 +1,7 @@
+function getIndexToIns(arr, num) {
+  if (arr.length==0) return 0;
+  else if(Math.max(...arr)<num) return arr.length;
+  else return arr.sort((a,b)=>a-b).findIndex(item=>item>=num);
+}
+
+getIndexToIns([40, 60], 50);
